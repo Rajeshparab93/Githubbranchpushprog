@@ -25,4 +25,9 @@ public class EmployeeController {
         return ResponseEntity.ok(employeeRepoImpl.findAll());
 
     }
+    @GetMapping("/say")
+    public ResponseEntity<String> sayHello() {
+
+        return ResponseEntity.ok("Welcome to my WORLD");
+    }
 }
